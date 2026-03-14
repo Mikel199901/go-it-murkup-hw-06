@@ -116,7 +116,7 @@
 
 /* ============== (Section one) ============== */
 
-.page-main .section-one {
+.page-body .page-main .section-one {
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
@@ -890,6 +890,8 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .icon-list {
@@ -948,6 +950,7 @@ img {
         min-width: 169px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0;
     }
 
     .page-main .section-two {
@@ -970,6 +973,7 @@ img {
     }
 
     .page-main .section-two .section-title {
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
@@ -1017,6 +1021,7 @@ img {
         max-width: 288px;
         margin-left: auto;
         margin-right: auto;
+        box-shadow: 0px 2px 1px 0px #2E2F4214, 0px 1px 1px 0px #2E2F4229, 0px 1px 6px 0px #2E2F4214;
     }
 
     .page-main .section-four .img,
@@ -1033,20 +1038,27 @@ img {
     .page-footer .container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
         gap: 72px;
     }
 
     .footer-link {
-        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .page-footer .text {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
     }
 
     .page-footer .footer-text {
+        text-align: center;
+    }
+
+    .page-footer .footer-text,
+    .text-subscribe {
         text-align: center;
     }
 
@@ -1083,8 +1095,8 @@ img {
 
     .modal {
         width: calc(100% - 32px);
-        max-width: 392px;
-        min-height: auto;
+        max-width: 288px;
+        min-height: 623px;
         padding: 72px 16px 24px;
     }
 
@@ -1100,9 +1112,8 @@ img {
     }
 }
 
-/* ================================
-   MOBILE MENU
-================================ */
+/* ================================ MOBILE MENU ================================ */
+
 
 .mobile-menu-open-btn {
     padding: 0;
@@ -1311,6 +1322,10 @@ img {
         margin-bottom: 36px;
     }
 
+    .page-main .section-one .button {
+        margin-top: 0;
+    }
+
     .page-main .section-two {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -1333,6 +1348,7 @@ img {
 
     .page-main .section-two .section-title {
         text-align: left;
+        font-weight: 700;
     }
 
     .page-main .section-two .text {
@@ -1368,6 +1384,7 @@ img {
 
     .page-main .container-section-four .item {
         width: calc((100% - 24px) / 2);
+        box-shadow: 0px 2px 1px 0px #2E2F4214, 0px 1px 1px 0px #2E2F4229, 0px 1px 6px 0px #2E2F4214;
     }
 
     .page-footer {
